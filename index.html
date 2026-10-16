@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name | Portfolio</title>
+    <meta name="description" content="Computer Science undergraduate and web developer portfolio." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:wght@700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="container nav-wrap">
+            <a href="#home" class="logo">Heshani Dasanayaka</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+            <nav class="nav" id="nav" aria-label="Main navigation">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Tech Stack</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero2" id="home">
+            <div class="container hero2-grid">
+                <div class="hero2-copy">
+                    <h1 class="name">
+                        <span class="name-first">Heshani</span>
+                        <span class="name-last">Dasanayaka</span>
+                    </h1>
+                    <p class="role">Computer Science Undergraduate</p>
+                    <p class="intro">I am a Computer Science undergraduate who enjoys building user-friendly full-stack
+                        applications. I care about clean code, solid fundamentals and turning ideas into working
+                        software.</p>
+                    <div class="hero2-actions">
+                        <a href="#projects" class="btn btn-primary hero2-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-outline hero2-secondary">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero2-photo">
+                    <div class="photo-ring">
+                        <img src="images/profile.jpg" alt="Heshani Dasanayaka" data-fallback
+                            onerror="this.parentElement.classList.add('image-missing')" />
+                        <span class="image-fallback" aria-hidden="true">HD</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="underline"></div>
+                <div class="about-grid">
+                    <div class="about-img">
+                        <img src="images/about.jpg" alt="Your Name" />
+                    </div>
+                    <div class="about-text">
+                        <p>
+                            I am a Computer Science and Technology undergraduate at <strong>Uva Wellassa University of
+                                Sri Lanka</strong>,
+                            with a strong interest in software engineering, web development and machine learning. I
+                            enjoy turning ideas
+                            into working software, and I care about writing clean, readable code and building interfaces
+                            that are simple
+                            to use.
+                        </p>
+                        <p>
+                            Through coursework and team projects, I have built a gym management system with React and an
+                            object-oriented PHP REST API, designed an agricultural marketplace for Sri Lankan farmers,
+                            and trained a
+                            Random Forest model to predict laptop prices in Python. These projects taught me how to work
+                            with databases,
+                            version control and teammates, and how to take a feature from planning through testing.
+                        </p>
+                        <p>
+                            I am now looking for a <strong>software engineering internship</strong> where I can learn
+                            from experienced
+                            developers, contribute to real products and keep growing as an engineer.
+                        </p>
+                        <a href="images/HeshaniDasanayaka.pdf" class="btn btn-primary" download>
+                            <i class="fa-solid fa-download"></i> Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="underline"></div>
+
+                <div class="projects-grid">
+
+                    <!-- Project 1 -->
+                    <article class="card proj-card">
+                        <h3 class="proj-title">Laptop Price Predictor</h3>
+                        <p class="proj-desc">A machine learning model that predicts laptop prices through data
+                            preprocessing, feature engineering and a Random Forest algorithm, presented through a simple
+                            web interface.</p>
+                        <div class="tags">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Random Forest</span>
+                            <span class="tag">Jupyter Notebook</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                        <a href="https://github.com/YOUR-USERNAME/laptop-price-predictor" target="_blank"
+                            rel="noopener noreferrer" class="btn-github">GitHub</a>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="card proj-card">
+                        <h3 class="proj-title">FitZone Gym Management System</h3>
+                        <p class="proj-desc">A group project with Member, Trainer and Admin portals for plan management,
+                            front desk check-ins, workout scheduling and financial reports, built around an
+                            object-oriented PHP REST API.</p>
+                        <div class="tags">
+                            <span class="tag">React.js</span>
+                            <span class="tag">Vite</span>
+                            <span class="tag">PHP (OOP)</span>
+                            <span class="tag">REST API</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Teamwork</span>
+                        </div>
+                        <a href="https://github.com/YOUR-USERNAME/fitzone-gym-management-system" target="_blank"
+                            rel="noopener noreferrer" class="btn-github">GitHub</a>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="card proj-card">
+                        <h3 class="proj-title">LK Agro Market (group project)</h3>
+                        <p class="proj-desc">A group project for a marketplace connecting Sri Lankan farmers and buyers,
+                            with pre-orders, verified farmers, crop price suggestions and Sinhala, Tamil and English
+                            support. Project stage: [built / proposal stage].</p>
+                        <div class="tags">
+                            <span class="tag">React</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Multilingual</span>
+                            <span class="tag">Figma</span>
+                            <span class="tag">Teamwork</span>
+                        </div>
+                        <a href="https://github.com/YOUR-USERNAME/lk-agro-market" target="_blank"
+                            rel="noopener noreferrer" class="btn-github">GitHub</a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section section-alt" id="skills">
+            <div class="container">
+                <h2 class="section-title">Tech Stack</h2>
+                <div class="underline"></div>
+                <div class="tech-grid">
+                    <div class="tech-item"><i class="devicon-html5-plain colored"
+                            aria-hidden="true"></i><span>HTML5</span></div>
+                    <div class="tech-item"><i class="devicon-css3-plain colored"
+                            aria-hidden="true"></i><span>CSS3</span></div>
+                    <div class="tech-item"><i class="devicon-javascript-plain colored"
+                            aria-hidden="true"></i><span>JavaScript</span></div>
+                    <div class="tech-item"><i class="devicon-react-original colored"
+                            aria-hidden="true"></i><span>React</span></div>
+                    <div class="tech-item"><i class="devicon-nodejs-plain colored"
+                            aria-hidden="true"></i><span>Node.js</span></div>
+                    <div class="tech-item"><i class="devicon-php-plain colored" aria-hidden="true"></i><span>PHP</span>
+                    </div>
+                    <div class="tech-item"><i class="devicon-java-plain colored"
+                            aria-hidden="true"></i><span>Java</span></div>
+                    <div class="tech-item"><i class="devicon-mysql-plain colored" aria-hidden="true"></i><span>SQL
+                            (MySQL)</span></div>
+                    <div class="tech-item"><i class="devicon-python-plain colored"
+                            aria-hidden="true"></i><span>Python</span></div>
+                    <div class="tech-item"><i class="devicon-github-original" aria-hidden="true"></i><span>GitHub</span>
+                    </div>
+                    <div class="tech-item"><i class="fa-solid fa-robot" aria-hidden="true"></i><span>AI</span></div>
+                    <div class="tech-item"><i class="fa-solid fa-brain" aria-hidden="true"></i><span>Machine
+                            Learning</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ EXPERIENCE ============ -->
+        <section class="section section-alt" id="experience">
+            <div class="container">
+                <h2 class="section-title">Experience &amp; Leadership</h2>
+                <div class="underline"></div>
+
+                <div class="exp-list">
+
+                    <article class="card exp-card">
+                        <div class="exp-dot" aria-hidden="true"></div>
+                        <div class="exp-body">
+                            <p class="exp-date">Feb 2026 – Present</p>
+                            <h3>Executive Committee Member, Public Visibility (PV)</h3>
+                            <p class="exp-org">IEEE Uva Wellassa University Student Branch</p>
+                            <p class="exp-text">Part of the Public Visibility team, helping promote the branch's events
+                                and activities to students and the wider community. Working with other committee members
+                                to plan and publicise events, and building communication and team management skills
+                                along the way.</p>
+                            <div class="tags">
+                                <span class="tag">Communication</span>
+                                <span class="tag">Team Management</span>
+                                <span class="tag">Event Promotion</span>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <article class="card exp-card">
+                        <div class="exp-dot" aria-hidden="true"></div>
+                        <div class="exp-body">
+                            <p class="exp-date">Sep 2025 – Present</p>
+                            <h3>Member</h3>
+                            <p class="exp-org">MS Club of Uva Wellassa University</p>
+                            <p class="exp-text">Member of the university's Microsoft-focused club, taking part in
+                                technology sessions and community activities.</p>
+                        </div>
+                    </article>
+
+                    <article class="card exp-card">
+                        <div class="exp-dot" aria-hidden="true"></div>
+                        <div class="exp-body">
+                            <p class="exp-date">Jan 2024 – Dec 2025</p>
+                            <h3>Coding Practice</h3>
+                            <p class="exp-org">HackerRank</p>
+                            <p class="exp-text">Two years of regular problem solving to strengthen programming
+                                fundamentals and algorithmic thinking.</p>
+                            <div class="tags">
+                                <span class="tag">Java</span>
+                                <span class="tag">C</span>
+                                <span class="tag">Problem Solving</span>
+                            </div>
+                            <a href="https://www.hackerrank.com/profile/heshanidasanaya1" target="_blank" rel="noopener"
+                                class="exp-link">
+                                View HackerRank Profile <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section section-alt" id="education">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="underline"></div>
+
+                <!-- Degree card (unchanged) -->
+                <article class="card education-card">
+                    <div class="education-marker" aria-hidden="true"></div>
+                    <div class="education-content">
+                        <p class="experience-meta">[2024] to [2028]</p>
+                        <h3>BSc in Computer Science and Technology</h3>
+                        <p class="education-institution">Uva Wellassa University of Sri Lanka</p>
+                        <p><strong>Key modules:</strong> Object-Oriented Programming, Data Structures and Algorithms,
+                            Database Management Systems, Web Application Development, Software Engineering, Group
+                            Project</p>
+                    </div>
+                </article>
+
+                <!-- Certificates -->
+                <h3 class="sub-title">Licenses &amp; Certifications</h3>
+
+                <div class="cert-grid" id="certGrid">
+
+                    <div class="cert-card">
+                        <i class="fa-solid fa-certificate"></i>
+                        <h3>Introduction to Software Engineering</h3>
+                        <p>IBM · Nov 2025</p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/3HED0RYSUL6Q">View
+                            credential</a>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fa-solid fa-certificate"></i>
+                        <h3>Software Engineer Intern</h3>
+                        <p>HackerRank · Nov 2025</p>
+                        <a href="https://www.linkedin.com/in/heshani-dasanayaka-8bb3a2300/details/certifications/">View
+                            credential</a>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fa-solid fa-certificate"></i>
+                        <h3>Programming with Java</h3>
+                        <p>Amazon · Dec 2025</p>
+                        <a
+                            href="https://www.coursera.org/account/accomplishments/verify/POWHQ6Y70Q59?utm_source=link&utm_medium=certificat">View
+                            credential</a>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fa-solid fa-certificate"></i>
+                        <h3>Java Object-Oriented Programming</h3>
+                        <p>LinkedIn Learning · Dec 2025</p>
+                        <a
+                            href="https://www.linkedin.com/learning/certificates/6fad4934ebc39b252ec848ca9ff3a8ce3099295586fbccc4d67565de68ed8d76?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BzQHUF0b8StO%2BD4aYtl0mIA%3D%3D">View
+                            credential</a>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fa-solid fa-certificate"></i>
+                        <h3>JavaScript Essential Training</h3>
+                        <p>LinkedIn Learning · Dec 2025</p>
+                        <a
+                            href="https://www.linkedin.com/learning/certificates/a86bbf1afd6f7b46703a82933d8a454c4790e6a2ad42f5cffeb8711c449ce1a7?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BVBJs6sgDTGmyUZSMs%2FJQWg%3D%3D">View
+                            credential</a>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fa-solid fa-certificate"></i>
+                        <h3>Introduction to Back-End Development</h3>
+                        <p>Meta · Oct 2025</p>
+                        <a href="https://www.linkedin.com/in/heshani-dasanayaka-8bb3a2300/details/certifications/">View
+                            credential</a>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fa-solid fa-certificate"></i>
+                        <h3>Microsoft Azure Machine Learning</h3>
+                        <p>Microsoft · Dec 2025</p>
+                        <a
+                            href="https://www.coursera.org/account/accomplishments/verify/IY7QCLPXG0PE?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course">View
+                            credential</a>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fa-solid fa-certificate"></i>
+                        <h3>AI Foundations: Machine Learning</h3>
+                        <p>LinkedIn Learning · Dec 2025</p>
+                        <a
+                            href="https://www.linkedin.com/learning/certificates/f744d78e45ab4475393967417ad562ee324937584e2579f9480acf7f5cc159bb?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BVBJs6sgDTGmyUZSMs%2FJQWg%3D%3D">View
+                            credential</a>
+                    </div>
+
+                    <!-- Hidden until "Show all certificates" is clicked -->
+                    <div class="cert-card extra">
+                        <i class="fa-solid fa-certificate"></i>
+                        <h3>Cloud Computing Essentials with Azure Management</h3>
+                        <p>Microsoft · Dec 2025</p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/X5POG3H5I8Y2">View
+                            credential</a>
+                    </div>
+                    <div class="cert-card extra">
+                        <i class="fa-solid fa-certificate"></i>
+                        <h3>.NET Fundamentals: Concepts, APIs and Libraries</h3>
+                        <p>LinkedIn Learning · Dec 2025</p>
+                        <a
+                            href="https://www.linkedin.com/learning/certificates/caaabaf8165e21a05d744a0bca1ac950506b5c7087d988ab6fefd8ca2eaa6faf?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BVBJs6sgDTGmyUZSMs%2FJQWg%3D%3D">View
+                            credential</a>
+                    </div>
+                    <div class="cert-card extra">
+                        <i class="fa-solid fa-certificate"></i>
+                        <h3>Microservices Foundations</h3>
+                        <p>LinkedIn Learning · Dec 2025</p>
+                        <a
+                            href="https://www.linkedin.com/learning/certificates/0981515a4a4561658db6337d59cbedd6262b1b43a9f3ad96b23d8247a9b8b1b6?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BVBJs6sgDTGmyUZSMs%2FJQWg%3D%3D">View
+                            credential</a>
+                    </div>
+                    <div class="cert-card extra">
+                        <i class="fa-solid fa-certificate"></i>
+                        <h3>Learning Docker</h3>
+                        <p>LinkedIn Learning · Dec 2025</p>
+                        <a
+                            href="https://www.linkedin.com/learning/certificates/c06638ea173963c3cd9e7b2447f624ace5a4af168844e1909fa040a64d0a889d?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BVBJs6sgDTGmyUZSMs%2FJQWg%3D%3D">View
+                            credential</a>
+                    </div>
+                    <div class="cert-card extra">
+                        <i class="fa-solid fa-certificate"></i>
+                        <h3>Google AI Essentials</h3>
+                        <p>Google · Oct 2025</p>
+                        <a
+                            href="https://www.coursera.org/account/accomplishments/specialization/ARPOFM917PBI?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=s12n">View
+                            credential</a>
+                    </div>
+                    <div class="cert-card extra">
+                        <i class="fa-solid fa-certificate"></i>
+                        <h3>AI Fundamentals</h3>
+                        <p>Databricks</p>
+                        <a href="https://www.linkedin.com/in/heshani-dasanayaka-8bb3a2300/details/certifications/">View
+                            credential</a>
+                    </div>
+                    <div class="cert-card extra">
+                        <i class="fa-solid fa-certificate"></i>
+                        <h3>Introduction to Modern AI</h3>
+                        <p>Cisco Networking Academy · Oct 2025</p>
+                        <a href="https://www.linkedin.com/in/heshani-dasanayaka-8bb3a2300/details/certifications/">View
+                            credential</a>
+                    </div>
+                </div>
+
+
+        </section>
+
+        <section class="section contact-section" id="contact">
+            <canvas class="contact-particles" id="contactParticles" aria-hidden="true"></canvas>
+            <div class="container contact-grid">
+                <div class="contact-form-column">
+                    <h2 class="contact-form-title">Send Me a Message</h2>
+                    <div class="contact-form-wrap">
+                        <form class="contact-form" id="contactForm">
+                            <label class="visually-hidden" for="name">Your name</label>
+                            <input id="name" name="name" type="text" placeholder="Your Name" autocomplete="name"
+                                required />
+                            <label class="visually-hidden" for="email">Email address</label>
+                            <input id="email" name="email" type="email" placeholder="Email Address" autocomplete="email"
+                                required />
+                            <label class="visually-hidden" for="message">Your project message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
+                                required></textarea>
+                            <button class="btn btn-primary btn-block contact-submit" type="submit">
+                                <span>Send Message</span>
+                                <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                            </button>
+                            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+                        </form>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <h2 class="contact-heading">Let's Talk!</h2>
+                    <div class="contact-underline" aria-hidden="true"></div>
+                    <p class="contact-description">Have a project in mind? Let's discuss how we can bring your vision to
+                        life.</p>
+                    <div class="contact-socials" aria-label="Contact and social links">
+                        <a href="mailto:heshanidasanayaka29@gmail.com" aria-label="Email"><i
+                                class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+                        <a href="https://github.com/heshani129" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/heshani-dasanayaka-8bb3a2300/recent-activity/all/"
+                            target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i
+                                class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a href="https://wa.me/94716544821" target="_blank" rel="noopener noreferrer"
+                            aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+                        <a href="tel:+94716544821" aria-label="Call"><i class="fa-solid fa-phone"
+                                aria-hidden="true"></i></a>
+                    </div>
+                    <a class="contact-phone" href="tel:+94716544821">
+                        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                        <span>+94 71 654 4821</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> Heshani Dasanayaka. All rights reserved.</p>
+    </footer>
+    <button class="to-top" id="toTop" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up"
+            aria-hidden="true"></i></button>
+</body>
+
+</html>
